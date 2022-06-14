@@ -53,6 +53,7 @@ impl pallet_template::Config for Test {
 	type Event = Event;
 }
 
+// This should trigger on_genesis?
 // Build genesis storage according to the mock runtime.
 pub fn new_test_ext() -> sp_io::TestExternalities {
 	system::GenesisConfig::default().build_storage::<Test>().unwrap().into()
